@@ -153,9 +153,10 @@ margin-bottom: var(--base-elements-margin);
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
+    hyphens: auto;
   }
   &__title {
-    font-size: 36px;
+    font-size: 36px;   
   }
   &__subtitle {
     font-size: 26px;
@@ -206,13 +207,18 @@ margin-bottom: var(--base-elements-margin);
   &__label {
     display: block;
     width: 100%;
-    font-size: 9px;
+    font-size: 12px;
     text-align: center;
     background-color: yellow;
     margin: 0px;
     padding: 2px 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
+    @media (min-width: 480px) {
+      height: 32px;
+    }
+
   }
 
   &__toggler {
