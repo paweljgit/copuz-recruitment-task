@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TheGlassCard>
+    <TheNavigationBar />
+    <TheSuprise 
+      :isSupriseVisible="isSupriseVisible"
+    />
+    <TheMagicCalculator 
+      @set-is-suprise-visible="setIsSupriseVisible"
+    />
+  </TheGlassCard>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheGlassCard from './components/TheGlassCard'
+import TheNavigationBar from './components/TheNavigationBar'
+import TheMagicCalculator from './components/TheMagicCalculator'
+import TheSuprise from './components/TheSuprise'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheGlassCard, TheNavigationBar, TheMagicCalculator, TheSuprise
+  },
+  data() {
+    return {
+      isSupriseVisible: false
+    }
+  },
+  methods: {
+    setIsSupriseVisible(e) {
+      e ? this.isSupriseVisible = true : this.isSupriseVisible = false  
+    }
   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

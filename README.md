@@ -1,24 +1,27 @@
-# copuz-recruitment-task
+# Copuz recruitment task
+
+My task was to write a calculator that would do "something" if the result of the calculation will be the number 9.
+
+### Live site url
+Linkhere
+
+## What do we have here?
+Vue JS 3 with SCSS, Babel, PWA, Eslint. My own design and style (pure scss no frameworks). No dependencies except "built-in". Vue CLI. Zero errors or warnings in the console. Caring for good practices and "Vue Style Guide". High Google Lighthouse score (PWA on green; Accessibility, Best Practices and SEO on 100%).
+
 
 ## Project setup
-```
-yarn install
-```
+Project setup
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+    yarn install
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Compiles and hot-reloads for development
 
-### Lints and fixes files
-```
-yarn lint
-```
+    yarn serve
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Compiles and minifies for production
+
+    yarn build
+
+Lints and fixes files
+
+    yarn lint
